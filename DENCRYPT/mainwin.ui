@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWin</class>
+ <widget class="QMainWindow" name="MainWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWin</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget{
+	
+	border-image: url(:/image/image/background.png);
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>12</number>
+    </property>
+    <property name="topMargin">
+     <number>12</number>
+    </property>
+    <property name="rightMargin">
+     <number>12</number>
+    </property>
+    <property name="bottomMargin">
+     <number>12</number>
+    </property>
+    <item>
+     <widget class="QTextEdit" name="srcTxt">
+      <property name="acceptRichText">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="FunctionLayout">
+      <item>
+       <widget class="QPushButton" name="encryptButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>加密</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="decryptButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>解密</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pasteEncrypt">
+        <property name="text">
+         <string>粘贴加密</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pasteDecrypt">
+        <property name="text">
+         <string>粘贴解密</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>密钥(字母数字最多12字, 字母大小写意义相等):</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="keyEdit">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>111</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="outTxt">
+      <property name="acceptRichText">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
